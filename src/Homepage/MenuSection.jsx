@@ -1,6 +1,8 @@
-import React, { useEffect } from "react";
+import React, {useEffect} from "react";
+import Star from '../assets/Star.svg'
 import { useDispatch, useSelector } from "react-redux";
-import { getMenus, menuSelectors } from "../features/MenuSlice";
+import { getProducts, productSelectors } from "../features/ProductSlice";
+
 
 const menuSection = {
   highlight: "Our Menu",
@@ -9,14 +11,12 @@ const menuSection = {
 }
 
 export const MenuSection = () => {
-  
   const dispatch = useDispatch();
-
-  const menus = useSelector(menuSelectors.selectAll);
-
+  const products = useSelector(productSelectors.selectAll);
   useEffect(() => {
-    dispatch(getMenus());
-  }, [dispatch]);
+      dispatch(getProducts())
+  }, [dispatch])
+  
 
   return (
     <div className="lg:mx-20 md:mx-10 mx-6 mb-52">
@@ -42,12 +42,28 @@ export const MenuSection = () => {
         </div>
 
         {/* Menu */}
-        <div>
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-5 mt-14">
           {
-            menus.map((val, idx) => (
+            products.map((val, idx) => (
               <div key={idx}>
-                <img src={val.image} alt="" />
-
+                <img src={val.image} alt=""/>
+                {/* title and rating */}
+                <div className="flex mt-3">
+                  <h4 className="md:w-[60%] w-[62%] md:text-[1rem] text-[.9rem] font-semibold">{val.title}</h4>
+                  {/* rating */}
+                  <div className="flex items-center space-x-1 ml-auto">
+                   <img src={Star} alt="" />
+                    <p className="md:text-[1rem] text-[.9rem]">{val.rating}</p>
+                  </div>
+                </div>
+                <p className="text-[.9rem] text-content py-3">{val.desc}</p>
+                 {/* CTA Cart and price */}
+                <div className="flex">
+                  <button>
+                  <p>Add</p>
+                  </button>
+                  <p className="ml-auto text-[1rem] font-semibold">${val.price}</p>
+                </div>
               </div>
             ))
           }
