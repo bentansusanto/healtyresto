@@ -1,10 +1,18 @@
-import React from 'react';
-import './index.css';
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Homepage from "./Homepage/Homepage";
+import "./index.css";
+import Navbar from "./Navbar/Navbar";
 
 function App() {
   return (
     <div className="App">
-      <h1 className='text-5xl'>Hello World</h1>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Homepage/>}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
