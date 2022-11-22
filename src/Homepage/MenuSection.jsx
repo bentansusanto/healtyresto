@@ -1,7 +1,8 @@
 import React, {useEffect} from "react";
-import Star from '../assets/Star.svg'
 import { useDispatch, useSelector } from "react-redux";
 import { getProducts, productSelectors } from "../features/ProductSlice";
+import Star from '../assets/Star.svg'
+import {MdAdd} from 'react-icons/md'
 
 
 const menuSection = {
@@ -58,9 +59,10 @@ export const MenuSection = () => {
                 </div>
                 <p className="text-[.9rem] text-content py-3">{val.desc}</p>
                  {/* CTA Cart and price */}
-                <div className="flex">
-                  <button>
-                  <p>Add</p>
+                <div className="flex items-center">
+                  <button className="flex space-x-1 items-center text-second bg-third px-3 py-1.5">
+                  <MdAdd className="text-[1.2rem]"/>
+                  <p className="text-[.9rem]">Add</p>
                   </button>
                   <p className="ml-auto text-[1rem] font-semibold">${val.price}</p>
                 </div>
