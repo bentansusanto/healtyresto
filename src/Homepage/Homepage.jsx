@@ -3,6 +3,8 @@ import { AboutSection } from "./AboutSection";
 import { HeroSection } from "./HeroSection";
 import { MenuSection } from "./MenuSection";
 import { ServiceSection } from "./ServiceSection";
+import { SubscribeSection } from "./SubscribeSection";
+import { TestimoniSection } from "./TestimoniSection";
 
 const heroSection = {
   promo: "Sall Top 20% Off",
@@ -43,7 +45,17 @@ const aboutSection = {
   image: "bg-about.svg",
 };
 
+const testimoniSection = {
+  highlight: " What they are say ",
+  title: "What they are says about us",
+  image: "bg-testimoni.svg",
+};
 
+const subscribeSection = {
+    title : 'Get more discount if you order from us',
+    content : 'Join with us then you must have get a discount and get promo from us to you , enjoy and happy to order.',
+    image : 'bg-subscribe.svg'
+}
 
 const Homepage = () => {
   return (
@@ -51,7 +63,9 @@ const Homepage = () => {
       <HeroSection heroSection={heroSection} />
       <ServiceSection serviceSection={serviceSection} />
       <AboutSection aboutSection={aboutSection} />
-      <MenuSection/>
+      <MenuSection />
+      <TestimoniSection testimoniSection={testimoniSection} />
+      <SubscribeSection subscribeSection={subscribeSection}/>
     </div>
   );
 };

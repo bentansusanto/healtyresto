@@ -89,5 +89,31 @@
             "desc" : "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             "image" : "https://images.unsplash.com/photo-1639744211106-6dd155bd96b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
         }
+    ],
+    "testimoni" : [
+        {
+            "id" : 1,
+            "name" : "Erick Smith",
+            "job" : "Food Vlogger",
+            "message" : "All service provided is so perfect and fast, and im so happy to order from this company",
+            "rating" : 5.0,
+            "foto" : "erick-smith.svg"
+        },
+        {
+            "id" : 2,
+            "name" : "Erick Smith",
+            "job" : "Food Vlogger",
+            "message" : "All service provided is so perfect and fast, and im so happy to order from this company",
+            "rating" : 5.0,
+            "foto" : "erick-smith.svg"
+        },
+        {
+            "id" : 3,
+            "name" : "Erick Smith",
+            "job" : "Food Vlogger",
+            "message" : "All service provided is so perfect and fast, and im so happy to order from this company",
+            "rating" : 5.0,
+            "foto" : "erick-smith.svg"
+        }
     ]
 }

@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getProducts, productSelectors } from "../features/ProductSlice";
 import Star from '../assets/Star.svg'
 import {MdAdd} from 'react-icons/md'
+import { Link } from "react-router-dom";
 
 
 const menuSection = {
@@ -70,7 +71,14 @@ export const MenuSection = () => {
             ))
           }
         </div>
-       
+          {/* CTA Menu Page */}
+          <div className="justify-center text-center mt-20">
+            <button className="bg-third px-6 py-2.5 rounded-sm text-second text-[.9rem]">
+              <Link to="/">
+                  Show more
+              </Link>
+            </button>
+          </div>
     </div>
     </div>
   );
