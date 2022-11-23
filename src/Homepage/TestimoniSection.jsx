@@ -4,7 +4,7 @@ import Star from "../assets/Star.svg";
 
 export const TestimoniSection = ({ testimoniSection }) => {
   return (
-    <div className="lg:mx-20 md:mx-10 mx-6 mb-40">
+    <div className="lg:mx-20 md:mx-10 mx-6 mb-52">
       <div className="testimoni-section md:flex block md:space-x-12 space-x-0 items-center">
         <img src={require("../assets/" + testimoniSection.image)} alt="" className="md:w-[50%]"/>
         {/* Content */}

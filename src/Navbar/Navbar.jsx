@@ -30,9 +30,9 @@ const Navbar = () => {
             <div className="md:flex block md:items-center">
                 <Link
                     to="/"
-                    className="text-third font-head font-bold md:text-[1.3rem] text-[1.2rem] md:px0 px-5"
+                    className="font-head font-bold md:text-[1.3rem] text-[1.2rem] md:px0 px-5"
                 >
-                    Healty<span className="text-primary">Resto.</span>
+                    HealtyResto<span className='text-fourth'>.</span>
                 </Link>
                 {/* Link Item */}
                 <NavItem link={link} linkMobile={linkMobile}/>
