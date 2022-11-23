@@ -9,7 +9,7 @@ import { AiOutlineAppstore } from "react-icons/ai";
 
 const link = [
   { name: "Home", link: "/"},
-  { name: "About Us", link: "/" },
+  { name: "About Us", link: "/about" },
   { name: "Menu", link: "/" },
   { name: "Blog", link: "/" },
   { name: "Contact Us", link: "/" },
